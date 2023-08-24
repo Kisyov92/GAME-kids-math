@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  padding: 2.4rem 4.8rem;
+  position: relative;
+}
+
+.time-points {
+  margin-bottom: 2.4rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time-points {
+  font-size: 3.2rem;
+}
+
+.container-num {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.change-high-num {
+  background-color: #f07b3f;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.signs {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 4.8rem;
+}
+
+.backdrop {
+  height: 100vh;
+}
+
+.sign {
+  font-size: 6rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: #ffa94d;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+
+  margin-bottom: 4.8rem;
+}
+
+.num {
+  font-size: 9rem;
+  min-width: 16rem;
+  height: 16rem;
+  background-color: #a5d8ff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equal,
+.first-num,
+.second-num {
+  background-color: #ced4da;
+}
+
+.answer-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.num,
+.sign {
+  user-select: none;
+}
+
+.clickable {
+  box-shadow: 0px 0px 1rem #505050;
+  cursor: pointer;
+}
+
+.answer-options,
+.signs {
+  justify-content: space-between;
+  padding: 2rem;
+  border: 3px solid black;
+  background-color: #e7f5ff;
+  border-radius: 10px;
+}
+
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(82, 82, 82, 0.75);
+  top: 0;
+  left: 0;
+}
+
+.modal-form {
+  position: absolute;
+  background-color: #eee3cb;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.high-num-label {
+  font-size: 2.4rem;
+}
+
+.high-num-input {
+  padding-left: 0.5rem;
+  font-size: 3.2rem;
+  width: 30%;
+  border: 1px solid black;
+}
+
+.submit-btn {
+  font-size: 4.2rem;
+  width: 75%;
+  padding: 1rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+.starting-msg {
+  font-size: 4.4rem;
+  text-align: center;
+  width: 90rem;
+  margin: 0 auto;
+}
+
+.right-answer {
+  background-color: #8ce99a;
+}
+
+.wrong-answer {
+  background-color: red;
+}

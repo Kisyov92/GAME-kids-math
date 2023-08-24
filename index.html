@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Math</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container hide">
+        <div class="time-points">
+          <div class="points-container">
+            Solved equations: <span class="points">0</span>
+          </div>
+          <div class="time"></div>
+          <div class="container-num">
+            <div class="chosen-num">
+              Highest number: <span class="high-num">10</span>
+            </div>
+            <div class="change-high-num clickable">CHANGE</div>
+          </div>
+        </div>
+
+        <div class="signs">
+          <div class="sign clickable plus">+</div>
+          <div class="sign clickable minus">-</div>
+          <div class="sign clickable multiply">x</div>
+          <div class="sign clickable divide">÷</div>
+        </div>
+        <p class="starting-msg">
+          Choose one of the signs to start calculating. You can change it at any
+          time.
+        </p>
+        <div class="equation hide">
+          <div class="num first-num"></div>
+          <div class="sign sign-changing"></div>
+          <div class="num second-num"></div>
+          <div class="sign equal">=</div>
+          <div class="num answer"><span class="answer--right">?</span></div>
+        </div>
+        <div class="answer-options hide">
+          <div class="num clickable option"></div>
+          <div class="num clickable option"></div>
+          <div class="num clickable option"></div>
+          <div class="num clickable option"></div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="backdrop"></div>
+        <form class="modal-form">
+          <label for="highest-num" class="high-num-label"
+            >Choose the highest positive number to calculate(>2):</label
+          >
+          <input type="number" id="highest-num" class="high-num-input" />
+          <button type="submit" class="submit-btn">START GAME</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
