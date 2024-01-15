@@ -164,7 +164,7 @@ body {
 .starting-msg {
   font-size: 4.4rem;
   text-align: center;
-  width: 90rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -187,6 +187,9 @@ body {
   }
   .time-points {
     font-size: 2.4rem;
+  }
+  .starting-msg {
+    font-size: 3rem;
   }
 }
 @media (max-width: 48em) {
@@ -250,5 +253,8 @@ body {
   .equation {
     justify-content: center;
     gap: 0.5rem;
+  }
+  .starting-msg {
+    font-size: 2rem;
   }
 }
